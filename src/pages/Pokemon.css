@@ -1,0 +1,12 @@
+.pokemon-name {
+    text-transform: uppercase;
+}
+
+.pokemon-image {
+    height: 300px;
+    width: auto;
+    /*pixelated images render better
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+    */
+}

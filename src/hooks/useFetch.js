@@ -20,7 +20,7 @@ export const useFetch = (url) => {
                 const json = await res.json()
     
                 setIsPending(false)
-                setData(json.results)
+                setData(json)
                 setError(null)
             } catch (err) { //
                 if (err.name === "AbortError") {
