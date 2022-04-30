@@ -1,20 +1,31 @@
 import { Link } from 'react-router-dom'
 
-const PokemonCard = ({ id, name, image, type}) => {
+import './PokemonCard.css'
 
-    const style = `thumb-container ${type}`
+const PokemonCard = ({ id, name, image, types }) => {
+
+    const style = `thumb-container ${types[0].type.name}`
+
+    const type = types[0].type.name
+    const type2 = types[1]?.type?.name
+
+    const typeStyle = `type-container ${type}`
+    const typeStyle2 = `type-container ${type2}`
 
     return (
         <div className={style}>
             <div className='number'>
                 <small> {id} </small>
             </div>
-            <img src={image} alt={name} />
+            <img className='pokemon-thumbnail' src={image} alt={name}/>
             <div className="detail-wrapper">
                 <Link to={`/pokemon/${name}`} onClick={() => setTimeout(() => window.location.reload(), 300)}>
-                    {name}
+                    <small className='pokemon-link-name'> {name} </small>
                 </Link>
-                <small> {type} </small>
+                <div className='type-thumbnails'>
+                    <small className={typeStyle}> {type} </small>
+                    {type2 && <small className={typeStyle2}> {type2} </small>}
+                </div>
             </div>
         </div>
     )

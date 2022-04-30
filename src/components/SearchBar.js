@@ -2,6 +2,8 @@
 import { useState } from 'react'
 import { useHistory } from 'react-router-dom'
 
+import './SearchBar.css'
+
 export default function SearchBar() {
     const [term, setTerm] = useState('')
     const history = useHistory()
@@ -11,10 +13,10 @@ export default function SearchBar() {
     }
 
     return (
-        <div className='searchbar'>
+        <div className='box'>
             <form onSubmit={handleSubmit}>
-                <label htmlFor="search"> Search </label>
-                <input 
+                <input
+                className='input' 
                 type="text" 
                 id="search"
                 onChange={(e) => setTerm(e.target.value)}

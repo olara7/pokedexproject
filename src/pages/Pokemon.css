@@ -5,8 +5,29 @@
 .pokemon-image {
     height: 300px;
     width: auto;
+    border: 2px solid black;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 5px 10px black;
+    margin: 20px;
     /*pixelated images render better
     image-rendering: pixelated;
     image-rendering: crisp-edges;
     */
+}
+
+.pokemon-image:hover {
+    background-color: yellow;
+}
+
+.pokemon-details {
+    margin: auto;
+    width: 50%;
+    height: auto;
+    width: 350px;
+    border: 2px solid black;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 5px 10px black;
+    margin-bottom: 20px;
 }

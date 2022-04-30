@@ -2,6 +2,9 @@ import { useState } from 'react'
 import { useEffect } from 'react'
 import PokemonCard from '../components/PokemonCard'
 
+//styles
+import './Home.css'
+
 function Home() {
   const [allPokemons, setAllPokemons] = useState([])
   const [isLoading, setIsLoading] = useState(false)
@@ -55,6 +58,12 @@ function Home() {
       <button onClick={() => setUrl('https://pokeapi.co/api/v2/pokemon?limit=72&offset=649')}>
         Gen 6
       </button>
+      <button onClick={() => setUrl('https://pokeapi.co/api/v2/pokemon?limit=88&offset=721')}>
+        Gen 7
+      </button>
+      <button onClick={() => setUrl('https://pokeapi.co/api/v2/pokemon?limit=89&offset=809')}>
+        Gen 8
+      </button>
         <div className='pokemon-container'>
         <div className='all-container'>
           { allPokemons.map((pokemon, index) => 
@@ -62,7 +71,7 @@ function Home() {
             id={pokemon.id}
             name={pokemon.name}
             image={pokemon.sprites.front_default}
-            type={pokemon.types[0].type.name}
+            types={pokemon.types}
             key={index}
             />
           )}

@@ -2,4 +2,33 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     align-items: center;
+    border: 2px solid black;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 5px 10px black;
+    margin: 20px;
+}
+
+.sprite-evo {
+    border: 2px solid black;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 5px 10px black;
+    margin: 20px;
+}
+
+.sprite-evo:hover {
+    background-color: yellow;
+}
+
+@media only screen and (max-width: 1000px) {
+    .sprite-evo-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .sprite-evo-container {
+        grid-template-columns: 1fr;
+    }
 }

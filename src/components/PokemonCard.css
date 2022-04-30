@@ -1,0 +1,41 @@
+.type-container {
+    font-family: 'Trebuchet MS';
+    font-weight: bold;
+    width: 50px;
+    text-align: center;
+    display: inline-block;
+    padding: .1em .2em .2em;
+    margin: .1em .1em;
+    border-radius: 5px;
+    color: #F8F8F8;
+    border-style: solid none;
+    border-width: 1px;
+  }
+
+  /* .type-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.2rem;
+    width: 30px;
+    min-width: 30px;
+    text-align: center;
+    border: 2px solid black;
+    padding: 10px;
+    box-shadow: 3px 5px black;
+    margin: 5px 5px 10px 5px;
+  } */
+
+  .type-thumbnails {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.2rem;
+  }
+
+  .pokemon-link-name {
+      text-decoration: none;
+  }
