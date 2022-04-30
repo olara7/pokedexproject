@@ -9,6 +9,8 @@ export default function SearchBar() {
     const navigate = useNavigate();
 
     const handleSubmit = (e) => {
+        e.preventDefault()
+
         //history.push(`/pokemon/${term}`)
         navigate(`/pokemon/${term}`)
     }
