@@ -19,7 +19,7 @@ const PokemonCard = ({ id, name, image, types }) => {
             </div>
             <img className='pokemon-thumbnail' src={image} alt={name}/>
             <div className="detail-wrapper">
-                <Link to={`/pokemon/${name}`} onClick={() => setTimeout(() => window.location.reload(), 300)}>
+                <Link to={`/pokemon/${name}`}>
                     <small className='pokemon-link-name'> {name} </small>
                 </Link>
                 <div className='type-thumbnails'>
