@@ -10,7 +10,7 @@ export default function Navbar() {
     return (
         <div className="navbar">
             <nav>
-                <Link to='/' onClick={() => setTimeout(() => window.location.reload(), 300)} >
+                <Link to='/'>
                     <h3> Pokedex </h3>
                 </Link>
                 <SearchBar />
