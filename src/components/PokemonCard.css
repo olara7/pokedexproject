@@ -33,9 +33,32 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    border-radius: 0.2rem;
   }
 
   .pokemon-link-name {
       text-decoration: none;
+  }
+
+  /* unvisited link */
+a:link {
+    text-decoration: none;
+    color: black;
+  }
+  
+  /* visited link */
+  a:visited {
+    text-decoration: none;
+    color: black;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    text-decoration: none;
+    color: black;
+  }
+  
+  /* selected link */
+  a:active {
+    text-decoration: none;
+    color: black;
   }

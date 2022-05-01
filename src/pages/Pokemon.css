@@ -27,7 +27,11 @@
     width: 350px;
     border: 2px solid black;
     padding: 10px;
-    background-color: white;
+    background-color: rgb(156, 226, 115);
     box-shadow: 5px 10px black;
     margin-bottom: 20px;
+}
+
+.pokemon-details:hover {
+    background-color: yellow;
 }

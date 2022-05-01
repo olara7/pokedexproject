@@ -12,7 +12,7 @@ export default function SearchBar() {
         e.preventDefault()
 
         //history.push(`/pokemon/${term}`)
-        navigate(`/pokemon/${term}`)
+        navigate(`/pokemon/${term.toLowerCase()}`)
     }
 
     return (

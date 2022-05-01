@@ -28,10 +28,6 @@
   color: #61dafb;
 }
 
-body {
-  font-family: -apple-system;
-}
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -39,4 +35,8 @@ body {
   to {
     transform: rotate(360deg);
   }
+}
+
+body {
+  font-family: Martin, sans-serif;
 }
