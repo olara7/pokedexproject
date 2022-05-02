@@ -11,7 +11,7 @@ export default function Navbar() {
         <div className="navbar">
             <nav>
                 <Link to='/'>
-                    <h3 style={{ padding: "20px" }}> Pokedex </h3>
+                    <h3 style={{ ["padding"]: "10px" }}> Pokedex </h3>
                 </Link>
                 <SearchBar />
             </nav>
