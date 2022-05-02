@@ -1,5 +1,5 @@
 # Pokedex
-### Overview: This website is a pokedex. View pokemon from each generation with their details and sprites throughout the games. You can also search for a Pokemon.
+### Overview: This website is a pokedex. View pokemon from each generation with their details and sprites throughout the games. You can also search for a Pokemon. It is responsive and mobile friendly.
 ### Live website: https://oscar-pokedex-project.herokuapp.com/
 ### Technologies used: ReactJS | PokeAPI
 
@@ -17,3 +17,7 @@
 
 ### Pokemon Search
 ![pokedexProjectSearch](https://user-images.githubusercontent.com/54912970/166185158-54a02441-d70a-4683-8a47-cf82ec1ec9d3.PNG)
+
+### Responsive and Mobile
+![pokedexProjectHomeGen2_Mobile](https://user-images.githubusercontent.com/54912970/166186237-803c5b89-e1dc-4e9f-98bc-fbb6d5240870.PNG)
+![pokedexProjectDetails_Mobile](https://user-images.githubusercontent.com/54912970/166186247-0eae31c7-45b6-49f3-b9e0-7951810a0700.PNG)
